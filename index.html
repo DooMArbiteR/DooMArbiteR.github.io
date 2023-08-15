@@ -1,0 +1,205 @@
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title> 🅶🆁🅴🅶🅾🆁🆈 🅻🅰🅶🅾🆂- Webpage </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+</head>
+
+<body>
+<section class= "header">
+        <nav>
+            <a href="index.html"><img src="images/anakin.jpeg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#soccer">SOCCER</a></li>
+                        <li><a href="#spotify">SPOTIFY</a></li>
+                        <li><a href="">GAMES</a></li>
+                        <li><a href="">CONTACTS</a></li>
+                    </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+        
+<div class="text-box">
+    <h1>Gregory Lagos</h1> <br>
+    <p1> Welcome to the webpage of 𝕲𝖗𝖊𝖌𝖔𝖗𝖞 𝕷𝖆𝖌𝖔𝖘, this is a project to help develop my technical skills by combining my passions with what I have learned.<br><br>
+    </p1>
+    <button id="fun-button" class="main-link">FUN BUTTON</button>
+   
+
+    
+    
+</div>
+    
+</section>
+    
+<!------ projects --------->  
+
+<section class="projects" id="projects">
+    <hp>Projects: </hp>
+   
+    
+    <div class="row">
+        <a href="https://www.youtube.com/watch?v=xMxHBnpwjS4">
+        <div class="Project-col">
+            
+            <h3> The Rec App</h3>
+            <p>The Rec app connects users to established recreational organizations. They will be able to choose the activity they are looking for and 
+                company profiles will show up with contact information, the programs they offer, locations and times will be on display quick and efficiently.
+                People will be able to find the activities they know and love faster as well as discover new recreational activities they are interested in.
+                Organizers can make there own profiles showing what they have to offer and connecting to users internally or externally using there contact information.
+                Ultimatly the goal of the Rec app is to make activity easy,accesible, efficient and organized for users so they don't need to go anywhere else to find
+                the recreational activities they enjoy. </p>
+           
+        </div>
+        </a>    
+        <div class="Project-col">
+            <h3> Coming soon</h3>
+            <p>Nothing to see here -_-</p>
+        </div>
+    </div>
+    
+    
+</section>
+    
+
+    
+
+
+<!-------JavaScript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks")
+    
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+    
+</script>
+<script>
+    var navLinks = document.getElementById("navLinks");
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+    // Smooth scrolling to anchor
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+    
+<script>
+    const funButton = document.getElementById("fun-button");
+
+    const audioFiles = [
+        "fart.mp3",
+        "vineboom.mp3",
+        "sui.mp3",
+        "tacobell.mp3",
+        "gregegg.mp3",
+        "uber.mp3",
+        "pluh.mp3",
+        "guard2.mp3",
+        "inchident.mp3",
+        "shanerun.mp3",
+        "kungfu.mp3",
+        "scout.mp3"
+        
+        
+        
+        // Add more audio files here
+    ];
+
+    const audio = new Audio();
+
+    funButton.addEventListener("click", () => {
+        const randomIndex = Math.floor(Math.random() * audioFiles.length);
+        console.log("Random index:", randomIndex);
+        
+        const selectedAudio = audioFiles[randomIndex];
+        console.log("Selected audio:", selectedAudio);
+
+        audio.src = selectedAudio;
+        audio.load();
+        audio.play();
+    });
+</script>
+<section class="soccer" id="soccer">
+    <hs>SOCCER:Highlights</hs>
+    <div class="soccer-vid">
+         <video controls>
+            <source src="GregLhighlights.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+         </video>
+        
+    </div>    
+</section>
+    
+<section class="spotify" id=spotify>
+    <hs>My Spotify</hs>
+    <p>Some of my favourite playlists from spotify</p>
+    
+    <div class="row1">
+    <a href="https://open.spotify.com/playlist/2O0cGYht3dojPzABb5hZHk?si=e0d6deef52a94349">
+        <div class="spotify-col">
+            <img src="images/misatoshinji.PNG">
+            <div class="layer1">
+                <h5>Mistato's Car</h5>
+            </div>
+        </div>
+        </a>
+    
+    <a href="https://open.spotify.com/playlist/6oq9sria7aQs47VnWheWfi?si=c27eeeff37984027">
+        <div class="spotify-col">
+            <img src="images/playlistpic.PNG">
+            <div class="layer3">
+                <h5>WHITE GIRL</h5>
+            </div>
+        </div>
+        </a> 
+    <a href="https://open.spotify.com/playlist/0RyCNGDUCg2jTnPYLuvcg5?si=2d8edd1ee6ef4605">
+        <div class="spotify-col">
+            <img src="images/psycho.PNG">
+            <div class="layer4">
+                <h5>80's VICE</h5>
+            </div>
+        </div>
+        </a>   
+           <a href="https://open.spotify.com/playlist/6tirJyUJ8aF1GkEttMnG4l?si=f7a338a232fd49f8">
+        <div class="spotify-col">
+            <img src="images/nikiLAUDa.PNG">
+            <div class="layer2">
+                <h5>12500 RPM</h5>
+            </div>
+        </div>
+        </a> 
+    </div>
+    
+</section>
+    
+</body>
+
+</html> 
